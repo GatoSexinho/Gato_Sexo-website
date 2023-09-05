@@ -1,0 +1,201 @@
+/* Estilos para los enlaces debajo del título */
+.enlaces {
+    display: flex;
+    gap: 10px;
+    background-color: auto;
+}
+
+/* Estilos para cada enlace */
+.enlace-banner {
+    background-color: #CACACA;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+/* Estilos para el hover del enlace */
+.enlace-banner:hover {
+    background-color: darkred;
+}
+
+/* Estilos para la barra superior */
+.barra-superior {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+}
+
+/* Estilos para el logo en la barra superior */
+.logo img {
+    width: 66px;
+    height: auto;
+    margin: 1px 10px;
+}
+
+/* Estilos para el nombre de la página en la barra superior */
+.nombre-pagina h1 {
+    font-size: 50px;
+    color: darkred;
+    font-family: fantasy;
+}
+
+/* Estilos para la barra inferior */
+.barra-inferior {
+    background-color: auto;
+    height: 6px;
+}
+
+/* Estilos para el contenedor principal */
+.contenedor {
+    display: flex;
+    height: 100vh;
+}
+
+/* Estilos para la primera sección */
+.seccion1 {
+    flex: 1;
+    background-color: #0C0C0C;
+    padding: 1px;
+}
+
+/* Estilos para la línea divisoria entre secciones */
+.linea {
+    width: 6px;
+    background-color: auto;
+    margin: 1px;
+}
+
+/* Estilos para la segunda sección */
+.seccion2 {
+    flex: 6;
+    background-color: #262626;
+    padding: 1px;
+}
+
+/* Estilos para los contenedores de los recuadros */
+.recuadro-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos para cada recuadro */
+.recuadro {
+    width: calc(33.33% - 20px);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    background-color: #360000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    max-width: 200px;
+}
+
+/* Estilos para la imagen de miniatura */
+.recuadro img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para el título */
+.titulo {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Estilos para el enlace */
+.enlace {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+/* Estilos para el hover del recuadro */
+.recuadro:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el hover del enlace */
+.recuadro:hover .enlace {
+    opacity: 1;
+}
+
+/* Estilos para el formulario de búsqueda y el botón */
+.buscador {
+    margin: 1px;
+    text-align: center;
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+}
+
+#busqueda {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+button[type="submit"] {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #8B0000;
+}
+
+#inicio-button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin-left: 1px;
+    cursor: pointer;
+}
+
+#inicio-button:hover {
+    background-color: #8B0000;
+}
+
+/* Estilos generales para la página de reproductor */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.reproductor {
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Estilos para el iframe de video */
+#videoFrame {
+    width: 100%;
+    max-width: 1280px;
+    height: 720px;
+    border: none;
+    background-color: black;
+    margin: 0 auto;
+    display: block;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El basurero de Gato Sexo</title>
+    <link rel="icon" type="image/png" href="img/Logo.png"><link rel="stylesheet" href="css/style.css">
+</head>
+<body bgcolor="gray">
+    <header>
+        <div class="barra-superior">
+            <div class="logo">
+                <img src="img/Logo.png" alt="logo de la pagina">
+            </div>
+            <div class="nombre-pagina">
+                <h1>EL BASURERO DE GATO SEXO</h1>
+                <div class="enlaces">
+                    <div class="enlace-banner">
+                        <a href="https://www.youtube.com/@ALEXANDRIA_IV/featured" target="_blank">YouTube</a>
+                    </div>
+                    <div class="enlace-banner">
+                        <a href="https://twitter.com/Gato_Sexinho" target="_blank">Twitter</a>
+                    </div>
+                    <div class="enlace-banner">
+                        <a href="https://www.tiktok.com/@alexandria_iv" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="barra-inferior"></div>
+    </header>
+    <div class="contenedor">
+        <div class="seccion1">
+            <button type="button" id="inicio-button">🏠</button>
+            <div class="buscador">
+        <form id="search-form">
+            <input type="text" name="busqueda" id="busqueda" placeholder="Buscar película por título">
+            <button type="submit">🔍︎</button>
+        </form>
+    </div>
+        </div>
+        <div class="linea"></div>
+        <div class="seccion2">
+            <div class="recuadro-container" id="recuadros-container">
+                <div class="recuadro">
+                    <a href="reproductor/video.html?video=https://doods.pro/d/vajavv8xld5l" class="enlace"></a>
+                    <img src="https://img.doodcdn.com/splash/f3jle86ghtdzg5me.jpg" alt="miniatura">
+                    <div class="titulo">Cannibal Holocaust</div>
+                </div>
+                <div class="recuadro">
+                    <a href="reproductor/video.html?video=https://doods.pro/d/jcp5x2oitji9" class="enlace"></a>
+                    <img src="https://img.doodcdn.com/splash/ruy8fpxkkxhu7fvp.jpg" alt="miniatura">
+                    <div class="titulo">Taxidermia</div>
+                <div class="recuadro">
+                    <a href="reproductor/video.html?video=" class="enlace"></a>
+                    <img src="" alt="miniatura">
+                    <div class="titulo">TITULO</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script> document.addEventListener("DOMContentLoaded", function () {
+        const searchForm = document.getElementById("search-form");
+        const inicioButton = document.getElementById("inicio-button");
+        const recuadros = document.querySelectorAll(".recuadro");
+
+        searchForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const searchTerm = document.getElementById("busqueda").value.toLowerCase();
+
+            recuadros.forEach((recuadro) => {
+                const titulo = recuadro.querySelector(".titulo").textContent.toLowerCase();
+                if (titulo.includes(searchTerm)) {
+                    recuadro.style.display = "block";
+                } else {
+                    recuadro.style.display = "none";
+                }
+            });
+        });
+
+        inicioButton.addEventListener("click", function () {
+            // Mostrar todos los recuadros cuando se hace clic en Inicio
+            recuadros.forEach((recuadro) => {
+                recuadro.style.display = "block";
+            });
+        });
+    });
+</script>
+<script>
+    // Función para ordenar los recuadros alfabéticamente
+    function ordenarRecuadros() {
+        const contenedor = document.getElementById('recuadros-container');
+        const recuadros = Array.from(contenedor.querySelectorAll('.recuadro'));
+
+        // Ordena los recuadros en función de su título
+        recuadros.sort((a, b) => {
+            const tituloA = a.querySelector('.titulo').textContent.toLowerCase();
+            const tituloB = b.querySelector('.titulo').textContent.toLowerCase();
+            return tituloA.localeCompare(tituloB);
+        });
+
+        // Limpia el contenedor y agrega los recuadros ordenados
+        contenedor.innerHTML = '';
+        recuadros.forEach((recuadro) => {
+            contenedor.appendChild(recuadro);
+        });
+    }
+
+    // Llama a la función para ordenar los recuadros al cargar la página
+    window.addEventListener('load', ordenarRecuadros);
+</script>
+</body>
+</html>
