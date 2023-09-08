@@ -1,3 +1,28 @@
+@font-face {
+    font-family: DeathtoMetal;
+    src: url(../fonts/DeathtoMetal.ttf);
+}
+
+@font-face {
+    font-family: Metallord;
+    src: url(../fonts/metal%20lord.otf);
+}
+
+@font-face {
+    font-family: MetalShow;
+    src: url(../fonts/MetalShow.ttf);
+}
+
+@font-face {
+    font-family: Metalishred;
+    src: url(../fonts/Metalshred.ttf);
+}
+
+@font-face {
+    font-family: Metalic;
+    src: url(../fonts/Metalic.ttf);
+}
+
 /* Estilos para los enlaces debajo del título */
 .enlaces {
     display: flex;
@@ -7,12 +32,14 @@
 
 /* Estilos para cada enlace */
 .enlace-banner {
-    background-color: #CACACA;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+    background-color:rgba( 255, 255, 255, 0 );
+    color:rgba( 255, 255, 255, 0.5 );
+    padding: 0px 80px;
+    border-radius: 15px;
     text-decoration: none;
     transition: background-color 0.2s;
+    font-family: Metalic;
+    font-size: 20px;
 }
 
 /* Estilos para el hover del enlace */
@@ -37,9 +64,9 @@
 
 /* Estilos para el nombre de la página en la barra superior */
 .nombre-pagina h1 {
-    font-size: 50px;
+    font-size: 40px;
     color: darkred;
-    font-family: fantasy;
+    font-family: Metallord;
 }
 
 /* Estilos para la barra inferior */
@@ -79,7 +106,7 @@
 .recuadro-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 23px;
 }
 
 /* Estilos para cada recuadro */
@@ -92,20 +119,25 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
     max-width: 200px;
+    max-height: 150px;
 }
 
 /* Estilos para la imagen de miniatura */
 .recuadro img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-width: 200px;
+    max-height: 110px;
 }
 
 /* Estilos para el título */
 .titulo {
-    padding: 10px;
-    font-size: 20px;
+    padding: 0px;
+    font-size: 15px;
     text-align: center;
     color: white;
+    font-style: italic;
+    font-family: Metalshred;
 }
 
 /* Estilos para el enlace */
@@ -185,15 +217,20 @@ body {
 }
 
 .reproductor {
-    text-align: center;
-    margin-top: 0px;
+    background-image: url('../img/thumbnail.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-position: center; /* Centra la imagen en el contenedor */
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 /* Estilos para el iframe de video */
 #videoFrame {
-    width: 100%;
-    max-width: 1280px;
-    height: 720px;
+    width: 70%;
+    max-width: auto;
+    height: 629px;
     border: none;
     background-color: black;
     margin: 0 auto;
