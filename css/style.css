@@ -1,26 +1,16 @@
 @font-face {
-    font-family: DeathtoMetal;
-    src: url(../fonts/DeathtoMetal.ttf);
+    font-family: F1;
+    src: url(../fonts/MetalLord.otf);
 }
 
 @font-face {
-    font-family: Metallord;
-    src: url(../fonts/metal%20lord.otf);
+    font-family: F2;
+    src: url(../fonts/Deadwax.ttf);
 }
 
 @font-face {
-    font-family: MetalShow;
-    src: url(../fonts/MetalShow.ttf);
-}
-
-@font-face {
-    font-family: Metalishred;
-    src: url(../fonts/Metalshred.ttf);
-}
-
-@font-face {
-    font-family: Metalic;
-    src: url(../fonts/Metalic.ttf);
+    font-family: F3;
+    src: url(../fonts/Travesty.ttf);
 }
 
 /* Estilos para los enlaces debajo del título */
@@ -34,11 +24,11 @@
 .enlace-banner {
     background-color:rgba( 255, 255, 255, 0 );
     color:rgba( 255, 255, 255, 0.5 );
-    padding: 0px 80px;
+    padding: 0px 10px;
     border-radius: 15px;
     text-decoration: none;
     transition: background-color 0.2s;
-    font-family: Metalic;
+    font-family: F1;
     font-size: 20px;
 }
 
@@ -64,9 +54,9 @@
 
 /* Estilos para el nombre de la página en la barra superior */
 .nombre-pagina h1 {
-    font-size: 40px;
+    font-size: 30px;
     color: darkred;
-    font-family: Metallord;
+    font-family: F2;
 }
 
 /* Estilos para la barra inferior */
@@ -134,11 +124,10 @@
 /* Estilos para el título */
 .titulo {
     padding: 0px;
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
-    color: white;
-    font-style: italic;
-    font-family: Metalshred;
+    color:white;
+    font-family: F3;
 }
 
 /* Estilos para el enlace */
