@@ -23,14 +23,6 @@
     <div class="reproductor">
         <iframe id="videoFrame" width="auto" height="auto" frameborder="0" allowfullscreen></iframe>
     </div>
-    <script>
-        // Obtiene el parámetro "video" de la URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const videoUrl = urlParams.get("video");
-
-        // Establece la URL del video en el iframe
-        const videoFrame = document.getElementById("videoFrame");
-        videoFrame.src = videoUrl;
-    </script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

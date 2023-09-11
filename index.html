@@ -43,98 +43,10 @@
         <div class="linea"></div>
         <div class="seccion2">
             <div class="recuadro-container" id="recuadros-container">
-                <div class="recuadro">
-                    <a href="reproductor/video.html?video=https://doods.pro/d/vajavv8xld5l" class="enlace"></a>
-                    <img src="https://img.doodcdn.com/splash/f3jle86ghtdzg5me.jpg" alt="miniatura">
-                    <div class="titulo">Cannibal Holocaust</div>
-                </div>
-                <div class="recuadro">
-                    <a href="reproductor/video.html?video=https://doods.pro/d/jcp5x2oitji9" class="enlace"></a>
-                    <img src="https://img.doodcdn.com/splash/ruy8fpxkkxhu7fvp.jpg" alt="miniatura">
-                    <div class="titulo">Taxidermia</div>
-                </div>
-                <div class="recuadro">
-                    <a href="reproductor/video.html?video=https://doods.pro/d/41srye5df88y" class="enlace"></a>
-                    <img src="https://img.doodcdn.com/splash/actflj4hwx1u5odm.jpg" alt="miniatura">
-                    <div class="titulo">Dawn of the dead<br>1978</div>
-                </div>
-                <div class="recuadro">
-                    <a href="reproductor/video.html?video=https://doods.pro/d/es7cm7yhlcmk" class="enlace"></a>
-                    <img src="https://img.doodcdn.com/splash/2u3ci2kgckuaic26.jpg" alt="miniatura">
-                    <div class="titulo">Tetsuo The Iron Man<br>1989</div>
-                </div>
-                <div class="recuadro">
-                    <a href="reproductor/video.html?video=https://doods.pro/d/tdgvhpjtwueq" class="enlace"></a>
-                    <img src="https://img.doodcdn.com/splash/ail7y39uzpvnwe3i.jpg" alt="miniatura">
-                    <div class="titulo">Trauma<br>1993</div>
-                </div>
-                <div class="recuadro">
-                    <a href="reproductor/video.html?video=https://doods.pro/d/yq0o4irvrfr5" class="enlace"></a>
-                    <img src="https://img.doodcdn.com/splash/k9r422w81lkm55pa.jpg" alt="miniatura">
-                    <div class="titulo">Scream<br>1996</div>
-                </div>
-                <div class="recuadro">
-                    <a href="reproductor/video.html?video=https://doods.pro/d/z6dloijo8yk2" class="enlace"></a>
-                    <img src="https://img.doodcdn.com/splash/bx8jkgazx1u199up.jpg" alt="miniatura">
-                    <div class="titulo">The Boogeyman<br>2023</div>
-                </div>
-                <div class="recuadro">
-                    <a href="reproductor/video.html?video=" class="enlace"></a>
-                    <img src="" alt="miniatura">
-                    <div class="titulo">zzz</div>
-                </div>
             </div>
         </div>
     </div>
-    <script> document.addEventListener("DOMContentLoaded", function () {
-        const searchForm = document.getElementById("search-form");
-        const inicioButton = document.getElementById("inicio-button");
-        const recuadros = document.querySelectorAll(".recuadro");
-
-        searchForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            const searchTerm = document.getElementById("busqueda").value.toLowerCase();
-
-            recuadros.forEach((recuadro) => {
-                const titulo = recuadro.querySelector(".titulo").textContent.toLowerCase();
-                if (titulo.includes(searchTerm)) {
-                    recuadro.style.display = "block";
-                } else {
-                    recuadro.style.display = "none";
-                }
-            });
-        });
-
-        inicioButton.addEventListener("click", function () {
-            // Mostrar todos los recuadros cuando se hace clic en Inicio
-            recuadros.forEach((recuadro) => {
-                recuadro.style.display = "block";
-            });
-        });
-    });
-</script>
-<script>
-    // Función para ordenar los recuadros alfabéticamente
-    function ordenarRecuadros() {
-        const contenedor = document.getElementById('recuadros-container');
-        const recuadros = Array.from(contenedor.querySelectorAll('.recuadro'));
-
-        // Ordena los recuadros en función de su título
-        recuadros.sort((a, b) => {
-            const tituloA = a.querySelector('.titulo').textContent.toLowerCase();
-            const tituloB = b.querySelector('.titulo').textContent.toLowerCase();
-            return tituloA.localeCompare(tituloB);
-        });
-
-        // Limpia el contenedor y agrega los recuadros ordenados
-        contenedor.innerHTML = '';
-        recuadros.forEach((recuadro) => {
-            contenedor.appendChild(recuadro);
-        });
-    }
-
-    // Llama a la función para ordenar los recuadros al cargar la página
-    window.addEventListener('load', ordenarRecuadros);
-</script>
+    <script src="js/recuadros.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
