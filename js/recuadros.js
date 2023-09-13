@@ -20,7 +20,7 @@ const recuadrosData = [
     {
         videoUrl: "https://doods.pro/d/es7cm7yhlcmk",
         imageUrl: "https://img.doodcdn.com/splash/2u3ci2kgckuaic26.jpg",
-        title: "Tetsuo The Iron Man<br>-1989"
+        title: "Tetsuo The Iron Man<br>-1989-"
     },
      {
         videoUrl: "https://doods.pro/d/tdgvhpjtwueq",
@@ -41,6 +41,11 @@ const recuadrosData = [
         videoUrl: "https://doods.pro/d/zdgzxjqtedr3",
         imageUrl: "https://img.doodcdn.com/splash/9cawjaww36nvphqc.jpg",
         title: "Melancholie der Engel<br>-2009-"
+    },
+    {
+        videoUrl: "https://doods.pro/d/0g2bclt40ev6",
+        imageUrl: "https://img.doodcdn.com/splash/l1gmorp6lr34n8hl.jpg",
+        title: "Der goldene Handschuh<br>-2019-"
     },
     {
         videoUrl: "",
