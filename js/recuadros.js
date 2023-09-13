@@ -48,6 +48,11 @@ const recuadrosData = [
         title: "Der goldene Handschuh<br>-2019-"
     },
     {
+        videoUrl: "https://doods.pro/d/b9s0br3f260s",
+        imageUrl: "https://img.doodcdn.com/splash/64drpaierfwlahw2.jpg",
+        title: "The Hunt<br>-2020-"
+    },
+    {
         videoUrl: "",
         imageUrl: "",
         title: "<br>"
