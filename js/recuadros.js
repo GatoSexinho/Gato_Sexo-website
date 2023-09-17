@@ -53,6 +53,11 @@ const recuadrosData = [
         title: "The Hunt<br>-2020-"
     },
     {
+        videoUrl: "https://doods.pro/d/8r9kxwl4eav4",
+        imageUrl: "https://img.doodcdn.com/splash/hzdzgtqpaf24r1r5.jpg",
+        title: "A Nightmare On Elm Street<br>-1984-"
+    },
+    {
         videoUrl: "",
         imageUrl: "",
         title: "<br>"

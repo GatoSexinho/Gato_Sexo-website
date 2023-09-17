@@ -18,7 +18,10 @@ function ordenarRecuadros() {
 }
 
 // Llama a la función para ordenar los recuadros al cargar la página
-window.addEventListener('load', ordenarRecuadros);
+window.addEventListener('load', () => {
+    ordenarRecuadros();
+    realizarBusqueda();
+});
 
 // Obtiene el parámetro "video" de la URL
 const urlParams = new URLSearchParams(window.location.search);
@@ -30,9 +33,9 @@ videoFrame.src = videoUrl;
 
 // Función para realizar la búsqueda y filtrar los recuadros
 function realizarBusqueda() {
+    const recuadros = document.querySelectorAll(".recuadro");
     const searchForm = document.getElementById("search-form");
     const inicioButton = document.getElementById("inicio-button");
-    const recuadros = document.querySelectorAll(".recuadro");
 
     searchForm.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -55,6 +58,3 @@ function realizarBusqueda() {
         });
     });
 }
-
-// Llama a la función realizarBusqueda al cargar la página
-document.addEventListener("DOMContentLoaded", realizarBusqueda);
